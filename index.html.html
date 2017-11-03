@@ -1,0 +1,140 @@
+
+<html>
+  <head>
+  	<link type="text/css" rel="stylesheet" href="main.css" />
+    <title> THE WEIRD WEBSITE </title>
+    <script>
+function banner(){ 
+var text = confirm("Did You Really Want to Click on My Banner?"); 
+return text; 
+}
+
+function answer(){
+
+  var radio = document.getElementsByName("trivia");
+var selection = false;
+var message = ""; 
+for( var i = 0; i < radio.length; i++) {
+if(radio[i].value == "7" && radio[i].checked == true) { 
+selection = true; 
+} //end if statement 
+} //end for loop
+
+if(selection == true) {
+message = message + "<b><p style='color:#40ff00'>Way to go!</p></b>"; 
+} else { 
+message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+}
+document.getElementById("response").innerHTML = message;
+
+
+} //end function answer
+
+
+</script>
+
+    <style>
+    </style>
+  </head>
+  <body id="background">
+    <a href="http://bing.com"onclick="return banner()"> 
+  	<header id="header1">THE WEIRD WEBSITE</header>
+  </a>
+    <nav> 
+      <ul id="navmenu">
+        <li class="navitem"> <a href="index.html"> Home </a> </li>
+<li class="navitem"> <a href="games.html"> Games </a> </li>
+<li class="navitem"> <a href="videos.html"> Videos </a> </li>
+</ul
+
+<div id="rightside">
+ <marquee class="listitem"> GOOD MORNING!</marquee>
+    <video width="400" height="220" controls>
+    <source src="http://www.w3schools.com/HTML/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video> 
+    <audio id="audio1" width="400" height="220" controls>
+    <source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+     Your browser does not support HTML 5 audio.
+    </audio> 
+    <h1> Steak is great </h1>
+    <img src="steak.jpg" />
+    <a href="http://www.seriouseats.com/definitive-guide-to-steak#steak-recipes">steak website</a>
+    <hr> <br/> Andrew, who is me, is the boss, and
+    <strong>Jacob, who is my brother,</strong>
+    <u><strong>is</strong></u> 
+    <i> Weird </i> 
+    <hr> 
+    <h1> Basketball is awesome </h1>
+    <img src="basketball.jpg" />
+    <a href="https://en.wikipedia.org/wiki/Basketball">basketball website</a>
+</div>
+
+<div id="leftside">
+<hr>
+    <h1>GO CARDINALS</h1>
+    <img src="cardinals2.png" />
+    <a href="http://www.mlb.com/cardinals">cardinals website</a>
+    <hr>
+    <h1> APPLES VS. BURGERS </h1>
+    <img src="apple.jpg" />
+    <img src="burger.jpg" />
+    <a href="http://www.twofoods.com/compare/query/QnVyZ2Vy/QXBwbGU=">apples vs. burgers website</a>
+    <ul>
+      <li class="listitem"> Apples are healthy </li> 
+      <li class="listitem"> Burgers are unhealthy </li> 
+    </ul> 
+</div> 
+
+<div id="clearfloat"></div>
+
+    </nav>
+   
+    <hr> 
+    <h5> hi </h5> 
+    Lucas is awesome <hr> HI 
+    <p> BYE </p> 
+    <small> Cheese is disgusting </small>
+    Pizza? PIZZA! 
+    <mark> HI </mark> 
+    <!-- Hello --> 
+    PaNcAkEs!
+    <ol>
+      <li class="listitem"> Pizza is good </li> 
+      <li class="listitem"> Kiwi is also good </li> 
+      <li class="listitem"> But bacon is the best </li>
+    </ol>
+    
+    <hr>
+    <table border="1">
+      <tr>
+        <th> Jacob </th> 
+        <th> Kaylin </th> 
+      </tr>
+      <tr>
+        <td> Sickly </td> 
+        <td> litte rascal </td>
+      </tr>
+    </table>
+    <hr>
+   <div class="trivia">
+    <h2> Trivia </h2>
+   <p>How many people are in the world as of <span class="date"> 2017 </span>?
+      <form>
+        <div id="response"></div>
+	    <input type="radio" name="trivia" value="9">9.2 billion<br> 
+	    <input type="radio" name="trivia" value="1">1.7 billion<br>
+	    <input type="radio" name="trivia" value="7">7.5 billion <br>
+	    <input type="radio" name="trivia" value="6">6.3 billion <br> 
+	    <input type="button" value="SUBMIT HERE"onclick="answer()">
+      </form>
+  </div>
+    </p>
+    <hr>
+    <marquee class="listitem"> GOOD NIGHT (OR GOOD MORNING)</marquee>
+    <small> I will miss you :( </small>
+    <large> NOT </large>
+    <input type="color"input>
+    <footer>Created by Andrew J. Meyers </footer>
+  </body>
+</html>
